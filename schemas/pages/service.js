@@ -20,6 +20,6 @@ export default {
       option: {
         hotspot: true
       }
-    },
+    }
   ]
 };

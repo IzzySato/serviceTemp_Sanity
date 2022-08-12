@@ -4,11 +4,6 @@ export default {
   type: 'document',
   fields: [
     {
-      name: 'busInfo',
-      title: 'Title',
-      type: 'string',
-    },
-    {
       name: 'businessName',
       title: 'Business Name',
       type: 'string',

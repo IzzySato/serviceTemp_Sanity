@@ -6,8 +6,13 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 
 // business info
 import businessInfo from './config/businessInfo';
-import root from './config/root';
-import importFont from './config/importFont';
+// styles
+import root from './styles/root';
+import importFont from './styles/importFont';
+import homeStyle from './styles/homeStyle';
+import aboutStyle from './styles/aboutStyle';
+import contactStyle from './styles/contactStyle';
+import serviceStyle from './styles/serviceStyle';
 // nodemailer
 import request from './nodemailer/request';
 import customer from './nodemailer/customer';
@@ -32,6 +37,10 @@ export default createSchema({
     contact,
     businessInfo,
     root,
-    importFont
+    importFont,
+    homeStyle,
+    aboutStyle,
+    contactStyle,
+    serviceStyle
   ]),
 })
