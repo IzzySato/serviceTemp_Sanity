@@ -1,6 +1,6 @@
 export default {
   name: 'customer',
-  title: 'Customer Request',
+  title: 'Customer',
   type: 'document',
   fields: [
     {
@@ -29,19 +29,12 @@ export default {
       type: 'string'
     },
     {
-      name: 'comment',
-      title: 'Comment',
-      type: 'string'
-    },
-    {
-      name: 'date',
-      title: 'Date',
-      type: 'date'
-    },
-    {
-      name: 'replyDone',
-      title: 'Replied',
-      type: 'boolean'
+      name: 'Slug',
+      title: 'slug',
+      type: 'slug',
+      options: {
+        source: 'email'
+      }
     }
   ]
 };

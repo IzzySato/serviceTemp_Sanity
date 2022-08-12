@@ -4,14 +4,18 @@ import createSchema from 'part:@sanity/base/schema-creator'
 // Then import schema types from any plugins that might expose them
 import schemaTypes from 'all:part:@sanity/base/schema-type'
 
-// We import object and document schemas
-import user from './admin/user';
-import customer from './admin/customer';
-import permission from './admin/permission';
-import about from './web/pages/about';
-import home from './web/pages/home';
-import service from './web/pages/service';
-import contact from './web/pages/contact';
+// business info
+import businessInfo from './config/businessInfo';
+import root from './config/root';
+import importFont from './config/importFont';
+// nodemailer
+import request from './nodemailer/request';
+import customer from './nodemailer/customer';
+// Pages
+import home from './pages/home';
+import about from './pages/about';
+import service from './pages/service';
+import contact from './pages/contact';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -20,12 +24,14 @@ export default createSchema({
   // Then proceed to concatenate our document type
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
-    user,
+    request,
     customer,
-    permission,
     about,
     home,
     service,
-    contact
+    contact,
+    businessInfo,
+    root,
+    importFont
   ]),
 })
