@@ -1,5 +1,5 @@
 export default {
-  name: 'about',
+  name: 'aboutPage',
   title: 'About us page',
   type: 'document',
   fields: [
@@ -20,6 +20,15 @@ export default {
       option: {
         hotspot: true
       }
+    },
+    {
+      title: 'About page Styles',
+      name: 'aboutStyles',
+      type: 'array',
+      of: [{
+        type: 'reference',
+        to: [{type: 'root'}]
+      }],
     }
   ]
 };

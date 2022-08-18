@@ -6,21 +6,29 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 
 // business info
 import businessInfo from './config/businessInfo';
+
+//components
+import service from './components/service';
+import estimate from './components/estimate';
+import nav from './components/nav';
+import footer from './components/footer';
+import contactHeader from './components/contactHeader';
+
 // styles
 import root from './styles/root';
-import importFont from './styles/importFont';
-import homeStyle from './styles/homeStyle';
-import aboutStyle from './styles/aboutStyle';
-import contactStyle from './styles/contactStyle';
-import serviceStyle from './styles/serviceStyle';
+import pageFont from './styles/pageFont';
+import global from './styles/global';
+import font from './styles/font';
+
 // nodemailer
 import request from './nodemailer/request';
 import customer from './nodemailer/customer';
+
 // Pages
-import home from './pages/home';
-import about from './pages/about';
-import service from './pages/service';
-import contact from './pages/contact';
+import homePage from './pages/homePage';
+import aboutPage from './pages/aboutPage';
+import servicePage from './pages/servicePage';
+import contactPage from './pages/contactPage';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -31,16 +39,19 @@ export default createSchema({
   types: schemaTypes.concat([
     request,
     customer,
-    about,
-    home,
+    aboutPage,
+    homePage,
+    servicePage,
+    contactPage,
     service,
-    contact,
     businessInfo,
     root,
-    importFont,
-    homeStyle,
-    aboutStyle,
-    contactStyle,
-    serviceStyle
+    pageFont,
+    estimate,
+    contactHeader,
+    nav,
+    footer,
+    global,
+    font
   ]),
 })

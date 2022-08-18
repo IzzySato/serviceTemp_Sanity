@@ -1,11 +1,11 @@
 export default {
-  name: 'importFont',
-  title: 'CSS Google font link',
+  name: 'font',
+  title: 'Font',
   type: 'document',
   fields: [
     {
       name: 'title',
-      title: 'Font title (e.g. Roboto)',
+      title: 'Font name (e.g. Roboto)',
       type: 'string',
     },
     {
@@ -17,6 +17,6 @@ export default {
       name: 'href',
       title: 'href (e.g. https://fonts.googleapis.com)',
       type: 'string',
-    }
+    },
   ]
 };

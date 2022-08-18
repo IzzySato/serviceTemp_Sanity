@@ -9,7 +9,7 @@ export default {
       type: 'string',
     },
     {
-      name: 'name',
+      name: 'rootKey',
       title: 'Root Name (e.g. --font-color)',
       type: 'string',
     },
@@ -20,7 +20,7 @@ export default {
     },
     {
       name: 'data',
-      title: 'Data (e.g. #FFFF)',
+      title: 'HTML color code, pick color from https://htmlcolorcodes.com. (e.g. #172248)',
       type: 'string',
     },
   ]

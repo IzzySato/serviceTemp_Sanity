@@ -1,17 +1,17 @@
 export default {
   name: 'service',
-  title: 'Service page',
+  title: 'Services',
   type: 'document',
   fields: [
     {
-      name: 'serviceTitle',
-      title: 'Title',
+      name: 'serviceName',
+      title: 'Service Name',
       type: 'string',
     },
     {
       name: 'serviceDesc',
-      title: 'Description',
-      type: 'string',
+      title: 'Service Description',
+      type: 'text',
     },
     {
       name: 'serviceImg',

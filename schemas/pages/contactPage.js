@@ -1,6 +1,6 @@
 export default {
-  name: 'contact',
-  title: 'Contact page',
+  name: 'contactPage',
+  title: 'Contact us page',
   type: 'document',
   fields: [
     {
@@ -16,5 +16,14 @@ export default {
         hotspot: true
       }
     },
+    {
+      title: 'Contact page Styles',
+      name: 'contactStyles',
+      type: 'array',
+      of: [{
+        type: 'reference',
+        to: [{type: 'root'}]
+      }],
+    }
   ]
 };

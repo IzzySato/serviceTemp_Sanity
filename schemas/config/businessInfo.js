@@ -9,12 +9,12 @@ export default {
       type: 'string',
     },
     {
-      name: 'description',
+      name: 'businessDescription',
       title: 'Description',
       type: 'string',
     },
     {
-      name: 'phoneNum',
+      name: 'phone',
       title: 'Phone Number',
       type: 'string',
     },
