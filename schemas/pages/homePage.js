@@ -25,6 +25,19 @@ export default {
         type: 'reference',
         to: [{type: 'root'}]
       }],
-    }
+    },
+    {
+      name: 'homeServiceStyle',
+      title: 'Service Style',
+      type: 'string',
+      options: {
+        list: [
+          { title: 'style 1 (with image)', value: 'style1' },
+          { title: 'style 2 (without image)', value: 'style2' },
+          { title: 'style 3 (without image with description)', value: 'style3' }
+        ],
+        layout: 'radio'
+      }
+    },
   ]
 };

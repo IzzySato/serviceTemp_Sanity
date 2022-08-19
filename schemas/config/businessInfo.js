@@ -51,5 +51,17 @@ export default {
         hotspot: true
       }
     },
+    {
+      name: 'logoStyles',
+      title: 'Logo Style',
+      type: 'string',
+      options: {
+        list: [
+          { title: 'logo included business name', value: 'style1' },
+          { title: 'logo not included business name', value: 'style2' }
+        ],
+        layout: 'radio'
+      }
+    },
   ]
 };
