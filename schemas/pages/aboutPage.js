@@ -29,6 +29,18 @@ export default {
         type: 'reference',
         to: [{type: 'root'}]
       }],
+    },
+    {
+      name: 'titleDiscBox',
+      title: 'Title & Description Box',
+      type: 'string',
+      options: {
+        list: [
+          { title: 'with box', value: 'withBox' },
+          { title: 'without box', value: 'withoutBox' }
+        ],
+        layout: 'radio'
+      }
     }
   ]
 };
