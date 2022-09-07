@@ -23,8 +23,10 @@ export default {
       type: 'string',
       options: {
         list: [
-          { title: 'style 1 (with image)', value: 'style1' },
-          { title: 'style 2 (without image)', value: 'style2' }
+          { title: 'style 1 (image, name, and description)', value: 'style1' },
+          { title: 'style 2 (name and description)', value: 'style2' },
+          { title: 'style 3 (name and image)', value: 'style3' },
+          { title: 'style 4 (name only)', value: 'style4' }
         ],
         layout: 'radio'
       }
