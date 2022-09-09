@@ -24,6 +24,18 @@ export default {
         type: 'reference',
         to: [{type: 'root'}]
       }],
-    }
+    },
+    {
+      name: 'estimateComponent',
+      title: 'Estimate Component',
+      description: 'Add Estimate component to the landing page?',
+      type: 'boolean'
+    },
+    {
+      name: 'testimonialComponent',
+      title: 'Testimonial Component',
+      description: 'Add Testimonial component to the landing page?',
+      type: 'boolean'
+    },
   ]
 };

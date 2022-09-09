@@ -13,6 +13,7 @@ import estimate from './components/estimate';
 import nav from './components/nav';
 import footer from './components/footer';
 import contactHeader from './components/contactHeader';
+import testimonial from './components/testimonial';
 
 // styles
 import root from './styles/root';
@@ -52,6 +53,7 @@ export default createSchema({
     nav,
     footer,
     global,
-    font
+    font,
+    testimonial
   ]),
 })
