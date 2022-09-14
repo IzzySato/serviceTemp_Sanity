@@ -14,12 +14,46 @@ export default {
       type: 'text',
     },
     {
-      name: 'serviceImg',
+      name: 'serviceImgs',
       title: 'service Image',
-      type: 'image',
+      type: 'array',
+      of: [
+        {
+          type: 'image'
+        }
+      ],
       option: {
         hotspot: true
       }
+    },
+    {
+      title: 'With image',
+      name: 'withImage',
+      type: 'boolean'
+    },
+    {
+      title: 'Add to estimate service list',
+      name: 'addEstimateServiceList',
+      type: 'boolean'
+    },
+    {
+      title: 'With description',
+      name: 'withDescription',
+      type: 'boolean'
+    },
+    {
+      title: 'order',
+      name: 'order',
+      type: 'number'
     }
+  ],
+  orderings: [
+    {
+      title: 'Order',
+      name: 'order',
+      by: [
+        {field: 'order', direction: 'asc'}
+      ]
+    },
   ]
 };

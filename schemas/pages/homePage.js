@@ -27,20 +27,6 @@ export default {
       }],
     },
     {
-      name: 'homeServiceStyle',
-      title: 'Service Style',
-      type: 'string',
-      options: {
-        list: [
-          { title: 'style 1 (name, image, and description)', value: 'style1' },
-          { title: 'style 2 (name and description)', value: 'style2' },
-          { title: 'style 3 (name and image)', value: 'style3' },
-          { title: 'style 4 (name only)', value: 'style4' }
-        ],
-        layout: 'radio'
-      }
-    },
-    {
       name: 'estimateComponent',
       title: 'Estimate Component',
       description: 'Add Estimate component to the landing page?',
@@ -56,6 +42,12 @@ export default {
       name: 'testimonialComponent',
       title: 'Testimonial Component',
       description: 'Add Testimonial component to the landing page?',
+      type: 'boolean'
+    },
+    {
+      title: 'Service image slide',
+      description: 'If it is not image slide, will display the first image.',
+      name: 'imageSlide',
       type: 'boolean'
     },
   ]
