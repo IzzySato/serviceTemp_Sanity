@@ -7,6 +7,10 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 // business info
 import businessInfo from './config/businessInfo';
 
+// customer
+import customer from './customer/customer';
+import request from './customer/request';
+
 //components
 import service from './components/service';
 import estimate from './components/estimate';
@@ -20,10 +24,6 @@ import root from './styles/root';
 import pageFont from './styles/pageFont';
 import global from './styles/global';
 import font from './styles/font';
-
-// nodemailer
-import request from './nodemailer/request';
-import customer from './nodemailer/customer';
 
 // Pages
 import homePage from './pages/homePage';
