@@ -50,5 +50,17 @@ export default {
       name: 'imageSlide',
       type: 'boolean'
     },
+    {
+      title: 'Business Info Box Style',
+      name: 'businessInfoBoxStyle',
+      type: 'string',
+      options: {
+        list: [
+          {title: 'Box Left', value: 'boxLeft'},
+          {title: 'Without Box', value: 'withoutBox'},
+          {title: 'Box Center', value: 'boxCenter'},
+        ],
+      }
+    }
   ]
 };
