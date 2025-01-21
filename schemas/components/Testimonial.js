@@ -4,39 +4,14 @@ export default {
   type: 'document',
   fields: [
     {
-      title: 'Testimonial title',
-      description: 'e.g. Testimonials || if you do not want, leave empty',
-      name: 'title',
+      title: 'Customer Name',
+      name: 'name',
       type: 'string',
     },
     {
-      title: 'Testimonials',
-      name: 'testimonials',
-      type: 'array',
-      of: [{
-        type: 'object',
-        fields: [
-          {
-            title: 'Customer Name',
-            name: 'name',
-            type: 'string'
-          },
-          {
-            title: 'Comment',
-            name: 'comment',
-            type: 'text'
-          },
-        ]
-      }],
+      title: 'Customer Comments',
+      name: 'comments',
+      type: 'text',
     },
-    {
-      title: 'Testimonial Styles',
-      name: 'testimonialStyles',
-      type: 'array',
-      of: [{
-        type: 'reference',
-        to: [{ type: 'root' }]
-      }],
-    }
   ]
 };

@@ -56,6 +56,7 @@ export default {
       type: 'string',
       options: {
         list: [
+          {title: 'No image', value: 'noImage'},
           {title: 'Box Left', value: 'boxLeft'},
           {title: 'Without Box', value: 'withoutBox'},
           {title: 'Box Center', value: 'boxCenter'},

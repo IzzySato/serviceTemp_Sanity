@@ -11,7 +11,8 @@ export default {
     {
       name: 'serviceType',
       title: 'Service Type',
-      type: 'string',
+      type: 'array',
+      of: [{type: 'string'}]
     },
     {
       title: 'Customer',
